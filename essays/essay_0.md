@@ -7,5 +7,5 @@ Here is a link to the discord documentation that was used, it shows how to setup
 
 # Essays links related to each project phase
 ### [README](../README.md)
-### [Essay 00](essays/essay_0.md)
-### [Essay 01](essays/essay_1.md)
+### [Essay 00](./essay_0.md)
+### [Essay 01](./essay_1.md)

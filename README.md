@@ -15,3 +15,6 @@ source venv/bin/activate
 python3 main.py
 ```
 
+# Essays links related to each project phase
+### [Essay 00](essays/essay_0.md)
+### [Essay 01](essays/essay_1.md)

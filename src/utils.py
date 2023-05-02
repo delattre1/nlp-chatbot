@@ -1,4 +1,5 @@
 import os
+import json
 from dotenv import load_dotenv, find_dotenv
 from classes.s3_handler import S3Handler
 
@@ -28,3 +29,17 @@ def create_s3_connection():
 
     s3 = S3Handler(access_key=S3_ACCESS_KEY, secret_key=S3_SECRET_KEY, endpoint=S3_ENDPOINT, bucket=S3_BUCKET, secure=S3_SECURE)
     return s3
+
+
+def save_dict(dic: dict, out_path: str):
+    # Dump the dictionary to a JSON file
+    with open(out_path, 'w') as f:
+        json.dump(dic, f)
+
+    
+def load_dict(path: str):
+    # Load the JSON file back into a dictionary
+    with open(path, 'r') as f:
+        dic = json.load(f)
+    
+    return dic

@@ -1,8 +1,4 @@
-import os
-import json
 import minio
-import traceback
-import pandas as pd
 from io import BytesIO
 
 from structlog import get_logger
@@ -22,12 +18,15 @@ class S3Handler:
         self.create_bucket()
 
     def save_html(self, content, fpath):
-        self.client.put_object(
-            self.bucket,
-            fpath,
-            BytesIO(content.encode('utf-8')),
-            len(content)
-        )
+        try:
+            self.client.put_object(
+                self.bucket,
+                fpath,
+                BytesIO(content.encode('utf-8')),
+                len(content)
+            )
+        except Exception as err:
+            log.error(f'Failed to save content to file: {fpath}. \nError: {err}')
 
     def read_html(self, fpath):
         obj = self.client.get_object(self.bucket, fpath)

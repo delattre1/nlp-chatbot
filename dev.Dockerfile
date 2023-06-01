@@ -12,6 +12,10 @@ RUN apt-get update && \
         python3-venv \ 
 		jupyter-notebook
 
+# Install NLTK and download packages
+RUN pip install --no-cache-dir nltk && \
+    python3 -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
+
 
 # set work directory
 WORKDIR /src

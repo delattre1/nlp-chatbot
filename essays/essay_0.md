@@ -1,3 +1,5 @@
+# Essay 0
+
 The plan was: "just make the chatbot work".
 
 There were not a lot of difficulties. But I had some permission problems, for example: the chatbot wasn't receiving the messages.

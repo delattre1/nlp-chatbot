@@ -1,7 +1,9 @@
+# Essay 4
+
 For the part 4 of the project, I did not went until the end.
 
 I focused on develop the trivial solution (10%):
-- The !generate command, only get the websites related to the search_term, and returns random sections of texts from the websites content.
+- The ```!generate``` command, only get the websites related to the ```search_term```, and returns random sections of texts from the websites content.
 
 # Essays links related to each project phase
 ### [README](../README.md)

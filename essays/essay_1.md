@@ -10,3 +10,7 @@ My use case is: a user that is having a bad day, so it will get a nice and warm 
 # Essays links related to each project phase
 ### [README](../README.md)
 ### [Essay 00](./essay_0.md)
+### [Essay 02](./essay_2.md)
+### [Essay 03](./essay_3.md)
+### [Essay 04](./essay_4.md)
+### [Essay 05](./essay_5.md)

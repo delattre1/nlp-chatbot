@@ -8,3 +8,7 @@ Here is a link to the discord documentation that was used, it shows how to setup
 # Essays links related to each project phase
 ### [README](../README.md)
 ### [Essay 01](./essay_1.md)
+### [Essay 02](./essay_2.md)
+### [Essay 03](./essay_3.md)
+### [Essay 04](./essay_4.md)
+### [Essay 05](./essay_5.md)
